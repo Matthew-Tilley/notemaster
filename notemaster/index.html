@@ -41,7 +41,8 @@
     </div>
   </div>
 
-<div v-bind:title="randNum">Hover over me to get your random number; refresh to get another.</div>
+<div  v-bind:title="randNum"
+      v-if="shown">Hover over me to get your random number; refresh to get another.</div>
 
 
 
@@ -61,6 +62,8 @@
       title: 'Notemaster',
       
       randNum: Math.floor(Math.random() * 50 ) + 1,
+
+      shown: false,
       
 
       note: {
