@@ -11,8 +11,7 @@
   <h3>{{title}}</h3>
   <h3>{{note.testText}}</h3>
 
-  <div v-on:hover="note.randNum.number">HOVER OVER ME FOR RANDOM NUMBER</div>
-  <div v-bind:title="randNum">{{note.randNum}}</div>
+ 
 
 
   <div class="form">
@@ -49,8 +48,7 @@
       note: {
         title: '',
         text: '',
-        testText: "Hello, World",
-        randNum: Math.floor(Math.random * 50 ) + 1,
+        
       },
       notes: [
         {
