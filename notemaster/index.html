@@ -41,7 +41,7 @@
     </div>
   </div>
 
- <div v-bind:title="randNum">HOVER OVER ME FOR A RANDOM NUMBER</div>
+ <div v-on:hover="makeRandNum">HOVER OVER ME FOR A RANDOM NUMBER</div>
  <div>{{randNum}}</div>
 
 
@@ -62,7 +62,7 @@
 
       title: 'Notemaster',
 
-      randNum: Math.floor(Math.random() * 50 ) + 1,
+      randNum: makeRandNum(),
 
       note: {
         title: '',
@@ -89,7 +89,14 @@
       },
       removeNote(index) {
         this.notes.splice(index, 1)
+      },
+
+
+      makeRandNum: function() {
+        return Math.floor(Math.random() * 50 ) + 1;
       }
+
+
     }
   })
 </script>
