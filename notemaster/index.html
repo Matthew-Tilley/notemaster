@@ -39,21 +39,35 @@
       </div>
     </div>
   </div>
+
+  <div @hover="randNum"></div>
+  {{randNum}}
+
+
+
+
 </div>
+
+
+
+
+
 <script>
   var app = new Vue({
+
     el: '#app',
+
     data: {
+
       title: 'Notemaster',
+
+      randNum: Math.floor(Math.random() * 50 ) + 1,
+
       note: {
         title: '',
         text: '',
         
-        randNum: Math.floor(Math.random() * 50 ) + 1
-
-
-
-
+        
       },
       notes: [
         {
