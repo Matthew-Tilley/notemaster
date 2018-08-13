@@ -1,47 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <title>Notemaster</title>
+
   <meta charset="utf-8">
+
   <script src="https://unpkg.com/vue"></script>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="http://davidtkatz.com/public_css/noteMaster.css">
+
 </head>
+
 <body>
 <div id="app">
-  <h3>{{title}}</h3>
-  <h3>{{note.testText}}</h3>
+
+
+  
+</div>  <!-- END OF APP DIV -->
+
+ 
 
  
 
 
-  <div class="form">
-    <div class="form-group">
-      <div class="form-group">
-        <label>Note Title</label>
-        <input class="form-control" type="text" v-model="note.title">
-      </div>
-      <div class="form-group">
-        <label>Note Text</label>
-        <textarea class="form-control" v-model="note.text"></textarea>
-      </div>
-    </div>
-    <button class="btn btn-primary" @click="addNote">Submit</button>
-  </div>
-  <div class="col-sm-12">
-    <div class="col-sm-4 note" v-for="(note, index) in notes">
-      <div class="card">
-          <button class="close" @click="removeNote(index)">&times;</button>
-        <div class="card-block">
-          <h4 class="card-title">{{note.title}}</h4>
-          <h6 class="card-subtitle mb-2 text-muted">{{note.date}}</h6>
-          <p class="card-text">{{note.text}}</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  
+ 
 
-
+ 
 
 
 
@@ -67,6 +54,8 @@
         
         
       },
+
+
       notes: [
         {
           title: 'Visited Hawaii',
@@ -93,5 +82,7 @@
   })  /* END OF VUE INSTANCE */
 
 </script>
+
 </body>
+
 </html>
