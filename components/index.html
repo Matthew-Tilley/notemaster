@@ -10,6 +10,8 @@
     <counter v-bind:add-num="10"></counter>
   </div>
   <script>
+
+
     var counter = Vue.component('counter', {
       template: `
         <div>
@@ -37,10 +39,13 @@
 
     var app = new Vue({
       el: '#app',
+
       components: {
         counter
       }
+
     })
+    
   </script>
 </body>
 </html>
