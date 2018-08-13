@@ -17,7 +17,7 @@
 <div id="app">
 
 
-  
+
 </div>  <!-- END OF APP DIV -->
 
  
@@ -37,45 +37,8 @@
 <script>
   var app = new Vue({
 
-    el: '#app',
-
-    data: {
-
-      title: 'Notemaster',
-      
-      randNum: Math.floor(Math.random() * 50 ) + 1,
-
-      shown: false,
-      
-
-      note: {
-        title: '',
-        text: '',
-        
-        
-      },
-
-
-      notes: [
-        {
-          title: 'Visited Hawaii',
-          text: 'I loved the beaches and delicious fresh coconuts',
-          date: new Date(Date.now()).toLocaleString()
-        }
-      ]
-    },
-    methods: {
-      addNote() {
-        let { text, title } = this.note
-        this.notes.push({
-          text,
-          title,
-          date: new Date(Date.now()).toLocaleString()
-        })
-      },
-      removeNote(index) {
-        this.notes.splice(index, 1)
-      },
+    
+    
 
     } /* END OF APP */
 
