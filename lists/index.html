@@ -10,7 +10,16 @@
     <ul>
       <li v-for="color in colors" v-if="color.primary">{{color.text}}</li>
     </ul>
+
+    <ul>
+      <li v-for="testColor in testColors"></li>
+    </ul>
+
   </div>
+
+
+
+
   <script>
     var app = new Vue({
       el: '#app',
